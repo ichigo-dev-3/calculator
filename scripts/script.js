@@ -27,6 +27,7 @@ const equalEvent = () => {
   operandTwo = display.textContent;
   display.textContent = roundDecimal(operate(operandOne, operator, operandTwo));
   operator = null;
+  displayClear = true
 };
 
 const numCombiner = (num) => {
