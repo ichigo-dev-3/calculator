@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-container {
+  padding: 20px;
+  background-color: navy;
+  min-height: 50%;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  border: none;
+  transition: all 0.4s;
+}
+
+button:hover{
+  background-color: blue;
+  opacity: 0.6;
+  transform: scale(1.1);
+  color: white;
+}
+
+button:active{
+  background-color: lightblue;
+  transform: scale(1.0) rotate(10deg)
+}
+
+.display {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  min-height: 50px;
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 100%;
+}
+
+.display-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px 20px;
+  background-color: lightblue;
+  margin-bottom: 25px;
+  text-align: right;
+  
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
